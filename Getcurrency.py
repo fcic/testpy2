@@ -21,4 +21,4 @@ for i1 in results1[0].table.find_all("tr"):
         if len(item)>2: 
             f.write(str(item))
 
-        f.close
+        f.closeq
