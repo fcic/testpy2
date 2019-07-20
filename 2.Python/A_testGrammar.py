@@ -13,3 +13,4 @@ def fcic(str):
 
 for i in range(0,len(sys.argv)):
   print(str(sys.argv[i]));
+
