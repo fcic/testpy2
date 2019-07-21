@@ -1,3 +1,4 @@
+#get, post url and response html
 import requests
 
 def Gethtml(url):
@@ -11,7 +12,7 @@ def Gethtml(url):
   #proxies = {    "http": "http://user:password@127.0.0.1:9743/",  }
   #requests.get("http://httpbin.org/get", timeout=0.5)
 
-  r = requests.get(url, ParaGet);
+  r = requests.post(url, ParaGet);
 
   #r.status_code
   #r.encoding
@@ -29,7 +30,8 @@ def readCookie():
     print(key,'==',value)
 
 #fcic();
-print(Gethtml('http://www.example.com'));
+#print(Gethtml('http://www.example.com'));
+
 #print(readCookie());
 #readCookie();
 
