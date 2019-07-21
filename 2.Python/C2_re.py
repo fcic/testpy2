@@ -1,4 +1,6 @@
 import re
+#sub() = replace
+
 
 def match(regex,str):
   return re.findall(regex , str, re.M|re.I)
@@ -12,4 +14,4 @@ if matchObj:
    print "matchObj.group(1) : ", matchObj.group(1)
    print "matchObj.group(2) : ", matchObj.group(2)
 else:
-   print "No match!!"
+   print "No match!!"6t
