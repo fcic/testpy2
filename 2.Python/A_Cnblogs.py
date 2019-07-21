@@ -10,7 +10,4 @@ def getData(url,xpath):
     for r in res:
         print(r)
 
-#‘li[starts-with(@class,'fcic')]/text()’
-#getData('https://www.cnblogs.com/','//*[@id="post_list"]/div/div[2]/h3/a/text()')
-
-
+getData('https://www.cnblogs.com/','//*[@id="post_list"]/div/div[2]/h3/a/text()')

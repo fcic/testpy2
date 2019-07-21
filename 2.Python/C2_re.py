@@ -1,9 +1,12 @@
 import re
-#sub() = replace
+
 
 
 def match(regex,str):
+  #search() 只拿第一个
+  #sub() = replace
   return re.findall(regex , str, re.M|re.I)
+
 
 str="Cats are smarter than dogs";
 #regex=r'(.*) are (.*?) .*';
