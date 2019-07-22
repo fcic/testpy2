@@ -57,7 +57,7 @@ a = read('./fcictest.csv').split('\n')
 for r in a:
     #print(r)
     write2('./test.xls', '\r'.join( getData(r)))
-    time.sleep(2)
+    #time.sleep(2)
 
 #write2('./test.xls', '\r'.join( getData('https://www.cnblogs.com/')))
 #print(getData('https://www.cnblogs.com/'))
