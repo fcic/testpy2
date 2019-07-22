@@ -12,5 +12,8 @@ def read(file):
     f=open(file,'r')
     return f.read()
 
-write2('./fcictest.txt','123123')
-print( read('./fcictest.txt'))
+write2('./fcictest.txt','aaaaa\n')
+#print( read('./fcictest.txt'))
+rows=read('./fcictest.txt').split('\n')
+for  r in rows:
+    print(r)
