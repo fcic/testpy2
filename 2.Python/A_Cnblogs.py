@@ -1,16 +1,25 @@
 import B1_requests
 from lxml import etree
 
+#fcic
+#1. no  No.21 row
+#2. page 2  coming is page 1
+
 i=1
+
 
 def getData(url):
     global i
+    # global rows
+    # rows.clear()
+    row=[]
+    rows=[]
     #html = B1_requests.Gethtml('http://www.example.com')
     html = B1_requests.Gethtml(url)
     #print(html)
     #res= etree.HTML(html).xpath('/html/body/div[1]/p[2]/a/text()')
     #row = []
-    rows= ['ID\tTitle\tAuthor\tView\tComment\tContent']
+    
     obj = etree.HTML(html).xpath('//*[@id="post_list"]/div/div[2]')
     #print(obj)
     # i=1
@@ -47,16 +56,22 @@ def getData(url):
 def write2(file,content):  
     f=open(file,'a')
     f.write(content)
-    f.close()
+    #f.close()
 
 def read(file):
     f=open(file,'r')
     return f.read()
 
 a = read('./fcictest.csv').split('\n')
+
+write2('./test.xls','ID\tTitle\tAuthor\tView\tComment\tContent\n')
+
 for r in a:
-    #print(r)
+    #print(r)fcic123456
+    
     write2('./test.xls', '\r'.join( getData(r)))
+    
+    #print(r)
     #time.sleep(2)
 
 #write2('./test.xls', '\r'.join( getData('https://www.cnblogs.com/')))
