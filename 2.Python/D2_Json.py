@@ -12,3 +12,4 @@ json_1row_Obj2 = { "Id":"fcic" ,     "age":30}
 
 json_Nrow_Obj2 = [{ "Id":"fcic" ,     "age":30},{"Id":"ooobbb","age":31} ] 
 print( json_Nrow_Obj2[1]['age'] )
+
