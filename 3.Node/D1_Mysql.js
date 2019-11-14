@@ -1,0 +1,18 @@
+// CREATE USER 'fcic'@'%' IDENTIFIED BY 'fcic123456';
+// GRANT ALL PRIVILEGES ON *.* TO 'fcic'@'localhost';
+
+var mysql      = require('mysql');
+var connection = mysql.createConnection({
+  host     : 'localhost',
+  user     : 'fcic',
+  password : 'fcic123456',
+  database : 'test'
+});
+ 
+connection.connect();
+ 
+connection.query('SELECT 1 + 1 AS solution', function (error, results, fields) {
+  if (error) throw error;
+  console.log('The solution is: ', results[0].solution);
+});
+
