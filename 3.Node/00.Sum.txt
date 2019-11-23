@@ -1,0 +1,5 @@
+npm install -g http-server
+http-server
++任意目录，任意文件，随时开关，
+-只能静态
+-只能读
