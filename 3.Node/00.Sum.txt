@@ -1,5 +1,15 @@
+
+//http_server
 npm install -g http-server
 http-server
-+任意目录，任意文件，随时开关，
++任意目录，任意文件，随时开关，自动list
+-无法触发 接受参数 做相应的事
 -只能静态
--只能读
+-只能读,适合下载资源
+
+//Express
++不破坏ui的情况下处理后台
++自带路由，接受多个协议post，get，delete，put...
++接受参数 做相应的事
++返回json
+https://expressjs.com/zh-cn/4x/api.html#req
