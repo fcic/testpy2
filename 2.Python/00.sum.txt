@@ -1,0 +1,7 @@
+1.
+{ ... }   is obj
+'{ ... }' is str
+
+2.
+for i in rage(1,3)
+

@@ -50,7 +50,7 @@ def downLoadVideoFromURL(url):
         print '\tError retrieving the URL:', dest_dir       
 
 #Step 1: get html
-html = getHtml('https://m.toutiaoimg.com/a6753168469002289678/?app=news_article&is_hit_share_recommend=0')
+html = getHtml('https://www.ixigua.com/i6753160838145638926/')
 file_object = open('video.html', 'w')
 file_object.write(html)
 file_object.close( )
