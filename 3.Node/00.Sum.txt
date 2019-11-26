@@ -1,12 +1,19 @@
 
-//http_server
+//sum
+http-server,express两个必须相互配合使用, 还有一个类似express的koa，koa2支持es6，7
+服务端js= node
+客户端js= <script>
+
+//http-server= hs
 npm install -g http-server
 http-server
 +任意目录，任意文件，随时开关，自动list,自动log
 +电影，mp3共享，在线播放
 -无法触发 接受参数 做相应的事(txt,database)
--只能静态
+-只能静态，
+-访问服务端js也是全文无解释直接输出，访问html里的js只能在客户端run
 -只能读,适合下载资源
+
 
 //Express
 +不破坏ui的情况下处理后台

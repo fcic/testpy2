@@ -7,3 +7,5 @@ Hit CTRL-C to stop the server
 [2019-11-25T06:17:14.442Z] "GET /" "curl/7.52.1"
 [2019-11-25T06:17:39.653Z] "GET /fcic.html" "curl/7.52.1"
 [2019-11-25T06:17:39.654Z] "GET /fcic.html" Error (404): "Not found"
+[2019-11-25T07:47:42.418Z] "GET /test.js" "curl/7.52.1"
+[2019-11-25T07:49:13.720Z] "GET /test.js" "curl/7.52.1"
